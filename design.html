@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        .carousel-inner {
+    max-height: 350px;
+    overflow: hidden;
+   }
+
+  .carousel-item img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .carousel-item img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  body {
+        background-image: url('https://img.freepik.com/free-photo/arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.jpg?semt=ais_hybrid&w=740');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+  }
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://www.kindpng.com/picc/m/478-4788427_shopping-cart-button-shopping-cart-logo-white-hd.png" alt="Logo" width="30" height="28" class="d-inline-block align-text-top">
+                    Style Kart
+                </a>
+            </div>
+        </nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Kids</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Furniture</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Groceries</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More...</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Electronics</a></li>
+                        <li><a class="dropdown-item" href="#">Home and Kitchen</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Flight Tickets</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Card Container -->
+<div class="d-flex justify-content-center gap-3 my-4 flex-wrap">
+    <div class="card" style="width: 18rem;">
+        <img src="https://img.freepik.com/free-vector/hello-summer-sale-with-leaves-umbrella_23-2148534240.jpg?semt=ais_hybrid&w=740" height="280" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text"><center><strong>Top offers</strong></center></p>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://swissbeauty.in/cdn/shop/products/DSC04272_1080x.jpg?v=1748633452" height="280" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text"><center><strong>Beauty</strong></center></p>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://img.freepik.com/free-photo/woman-model-business-suit-wearing-hat_1303-17693.jpg?semt=ais_hybrid&w=740" height="280" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text"><center><strong>Fashion</strong></center></p>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://cdn.test.de/file/image/c1/11/1f7d90d1-495e-436f-9d30-843e6660596a-web/6133835_tablets-t2407.jpg;w1200;a1-1;e.webp" height="280" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text"><center><strong>Mobiles and Tablets</strong></center></p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Carousel -->
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="carousel3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="carousel2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="carousel1.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+<!-- images-->
+<div class="container my-4">
+    <div class="row text-center">
+        <div class="col-md-2 col-sm-4 col-6 mb-3">
+            <img src="https://www.techasoft.com/debug/img/ele_brand.jpg" class="img-fluid rounded" alt="..." style="height: 120px; object-fit: cover;">
+            <p class="mt-2" style="color: white">Headphones</p>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6 mb-3">
+            <img src="https://img.freepik.com/premium-photo/toys-collection-isolated-background_488220-2432.jpg?semt=ais_hybrid&w=740" class="img-fluid rounded" alt="..." style="height: 120px; object-fit: cover;">
+            <p class="mt-2" style="color: white">Toys</p>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6 mb-3">
+            <img src="https://img.freepik.com/free-photo/mid-century-modern-living-room-interior-design-with-monstera-tree_53876-129805.jpg" class="img-fluid rounded" alt="..." style="height: 120px; object-fit: cover;">
+            <p class="mt-2" style="color: white">Furniture</p>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6 mb-3">
+            <img src="https://kitchenmart.co.in/cdn/shop/files/715IH20qEKL_2000x.jpg?v=1726222944" class="img-fluid rounded" alt="..." style="height: 120px; object-fit: cover;">
+            <p class="mt-2" style="color: white">Cookware</p>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6 mb-3">
+            <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1745271396-mhl-tank-tops-carhartt-2397-6806ba54db910.jpg?crop=0.869xw:0.869xh;0.0689xw,0.130xh&resize=980:*" class="img-fluid rounded" alt="..." style="height: 120px; object-fit: cover;">
+            <p class="mt-2" style="color: white">Shirts and Tops</p>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6 mb-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF_gAMixSALT8qff44FSq_tjEFiy3tATRF7g&s" class="img-fluid rounded" alt="..." style="height: 120px; object-fit: cover;">
+            <p class="mt-2" style="color: white">Washing machines</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- footer -->
+<footer class="bg-dark text-white pt-4 mt-5">
+    <div class="container text-center text-md-start">
+        <div class="row">
+            <!-- Brand -->
+            <div class="col-md-3 mb-4">
+                <h5 class="text-uppercase">Style Kart</h5>
+                <p>Your one-stop shop for fashion, electronics, and more!</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-3 mb-4">
+                <h6 class="text-uppercase">Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Men</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Women</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Kids</a></li>
+                </ul>
+            </div>
+
+            <!-- Categories -->
+            <div class="col-md-3 mb-4">
+                <h6 class="text-uppercase">Categories</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Groceries</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Furniture</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Electronics</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Mobiles & Tablets</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-3 mb-4">
+                <h6 class="text-uppercase">Contact</h6>
+                <p>Email: support@stylekart.com</p>
+                <p>Phone: +91 83109 78823</p>
+                <p>Location: Bangalore, India</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center p-3 bg-secondary">
+        © 2025 Style Kart. All rights reserved.
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
