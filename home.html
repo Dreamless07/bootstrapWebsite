@@ -21,6 +21,31 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   }
+  .card-equal {
+      background-color: #222;
+      padding: 10px;
+      border-radius: 10px;
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    .card-equal img {
+      height: 100px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .card-equal p {
+      margin: 0;
+      color: white;
+      font-size: 0.9rem;
+    }
+
   body {
         background-image: url('https://img.freepik.com/free-photo/arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.jpg?semt=ais_hybrid&w=740');
         background-size: cover;
@@ -30,6 +55,7 @@
     </style>
 </head>
 <body>
+
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -70,7 +96,6 @@
     </div>
 </nav>
 
-
 <!-- Card Container -->
 <div class="d-flex justify-content-center gap-3 my-4 flex-wrap">
     <a href="https://www.flipkart.com/offers-list/recommended-for-you?screen=dynamic&pk=contentTags%3DGCD_THEME_5~marketplace%3DFLIPKART~widgetType%3DdealCard~contentType%3DpersonalisedRecommendation%2FC5&marketplace=FLIPKART" style="text-decoration: none; color: inherit;">
@@ -107,19 +132,24 @@
     </a>
 </div>
 
-
 <!-- Carousel -->
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
+        <a href="https://www.amazon.in/b?ie=UTF8&node=15620863031">
         <div class="carousel-item active">
             <img src="carousel3.jpg" class="d-block w-100" alt="...">
         </div>
+        </a>
+        <a href="https://louisphilippe.abfrl.in/c/sale-upto-50?srsltid=AfmBOoqpUY1ZKu83-AAYACX_UpCwQfojMpL66m3A_KbVrVpw-vDnVr0g">
         <div class="carousel-item">
             <img src="carousel2.jpg" class="d-block w-100" alt="...">
         </div>
+        </a>
+        <a href="https://levi.in/collections/sale">
         <div class="carousel-item">
             <img src="carousel1.jpg" class="d-block w-100" alt="...">
         </div>
+        </a>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -131,37 +161,65 @@
     </button>
 </div>
 
-
 <!-- images-->
 <div class="container my-4">
-    <div class="row text-center">
-        <div class="col-md-2 col-sm-4 col-6 mb-3">
-            <img src="https://www.techasoft.com/debug/img/ele_brand.jpg" class="img-fluid rounded" alt="..." style="height: 120px; object-fit: cover;">
-            <p class="mt-2" style="color: white">Headphones</p>
-        </div>
-        <div class="col-md-2 col-sm-4 col-6 mb-3">
-            <img src="https://img.freepik.com/premium-photo/toys-collection-isolated-background_488220-2432.jpg?semt=ais_hybrid&w=740" class="img-fluid rounded" alt="..." style="height: 120px; object-fit: cover;">
-            <p class="mt-2" style="color: white">Toys</p>
-        </div>
-        <div class="col-md-2 col-sm-4 col-6 mb-3">
-            <img src="https://img.freepik.com/free-photo/mid-century-modern-living-room-interior-design-with-monstera-tree_53876-129805.jpg" class="img-fluid rounded" alt="..." style="height: 120px; object-fit: cover;">
-            <p class="mt-2" style="color: white">Furniture</p>
-        </div>
-        <div class="col-md-2 col-sm-4 col-6 mb-3">
-            <img src="https://kitchenmart.co.in/cdn/shop/files/715IH20qEKL_2000x.jpg?v=1726222944" class="img-fluid rounded" alt="..." style="height: 120px; object-fit: cover;">
-            <p class="mt-2" style="color: white">Cookware</p>
-        </div>
-        <div class="col-md-2 col-sm-4 col-6 mb-3">
-            <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1745271396-mhl-tank-tops-carhartt-2397-6806ba54db910.jpg?crop=0.869xw:0.869xh;0.0689xw,0.130xh&resize=980:*" class="img-fluid rounded" alt="..." style="height: 120px; object-fit: cover;">
-            <p class="mt-2" style="color: white">Shirts and Tops</p>
-        </div>
-        <div class="col-md-2 col-sm-4 col-6 mb-3">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF_gAMixSALT8qff44FSq_tjEFiy3tATRF7g&s" class="img-fluid rounded" alt="..." style="height: 120px; object-fit: cover;">
-            <p class="mt-2" style="color: white">Washing machines</p>
-        </div>
-    </div>
-</div>
+    <div class="row text-center g-3">
 
+        <div class="col-md-2 col-sm-4 col-6">
+            <a href="https://www.flipkart.com/audio-video/headset/pr?sid=0pm,fcn&marketplace=FLIPKART" style="text-decoration: none;">
+                <div class="card-equal">
+                    <img src="https://www.techasoft.com/debug/img/ele_brand.jpg" alt="Headphones">
+                    <p>Headphones</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+            <a href="https://www.flipkart.com/toysclp-store?otracker=nmenu_sub_Baby%20%26%20Kids_0_Toys" style="text-decoration: none;">
+                <div class="card-equal">
+                    <img src="https://img.freepik.com/premium-photo/toys-collection-isolated-background_488220-2432.jpg?semt=ais_hybrid&w=740" alt="Toys">
+                    <p>Toys</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+            <a href="https://www.flipkart.com/furniture-store?otracker=nmenu_sub_Home%20%26%20Furniture_0_Furniture%20Top%20Offers" style="text-decoration: none;">
+                <div class="card-equal">
+                    <img src="https://img.freepik.com/free-photo/mid-century-modern-living-room-interior-design-with-monstera-tree_53876-129805.jpg" alt="Furniture">
+                    <p>Furniture</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+            <a href="https://www.flipkart.com/kitchen-cookware-serveware/pr?sid=upp&otracker=nmenu_sub_Home%20%26%20Furniture_0_Kitchen%2C%20Cookware%20%26%20Serveware" style="text-decoration: none;">
+                <div class="card-equal">
+                    <img src="https://kitchenmart.co.in/cdn/shop/files/715IH20qEKL_2000x.jpg?v=1726222944" alt="Cookware">
+                    <p>Cookware</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+            <a href="https://www.flipkart.com/clothing-and-accessories/topwear/pr?sid=clo,ash&q=fashion&otracker=categorytree" style="text-decoration: none;">
+                <div class="card-equal">
+                    <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1745271396-mhl-tank-tops-carhartt-2397-6806ba54db910.jpg?crop=0.869xw:0.869xh;0.0689xw,0.130xh&resize=980:*" alt="Shirts and Tops">
+                    <p>Shirts and Tops</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-6">
+            <a href="https://www.flipkart.com/washing-machines/pr?sid=j9e,abm,8qx&otracker=categorytree" style="text-decoration: none;">
+                <div class="card-equal">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF_gAMixSALT8qff44FSq_tjEFiy3tATRF7g&s" alt="Washing Machines">
+                    <p>Washing Machines</p>
+                </div>
+            </a>
+        </div>
+</div>
+</div>
 
 <!-- footer -->
 <footer class="bg-dark text-white pt-4 mt-5">
@@ -209,7 +267,6 @@
         © 2025 Style Kart. All rights reserved.
     </div>
 </footer>
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
